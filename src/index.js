@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Router from './router'
+import Router from '@/router'
 
 // import assets
-import './index.scss';
+import '@/index.scss';
 
 const App = () => {
   return (
