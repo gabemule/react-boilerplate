@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Router from './router'
 
-import MyImage from './assets/dog.jpg';
+// import assets
 import './index.scss';
 
 const App = () => {
   return (
-    <div>
-      <h1>MF React Template</h1>
-      <img src={MyImage} />
-    </div>
+      <Router />
   );
 };
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+ReactDOM.render(
+    <App />,
+    document.querySelector("#root")
+);
