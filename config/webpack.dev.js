@@ -1,14 +1,14 @@
-const commonConfig = require('./webpack.common');
+const commonConfig = require("./webpack.common");
 
 const devConfig = {
-  mode: 'development',
+  mode: "development",
   devServer: {
     port: 9007,
     historyApiFallback: {
-      index: 'index.html',
+      index: "index.html",
     },
   },
-  devtool: 'hidden-source-map'
+  devtool: "hidden-source-map"
 };
 
 module.exports = Object.assign(commonConfig, devConfig);
