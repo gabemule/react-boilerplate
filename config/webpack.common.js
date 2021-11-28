@@ -1,12 +1,15 @@
 const path = require("path");
 const autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "../dist"),
+    asyncChunks: true,
     clean: true
   },
   resolve: {
@@ -14,6 +17,12 @@ module.exports = {
     alias: {
       "@": path.resolve(__dirname, "../src")
     },
+  },
+  optimization: {
+    minimizer: [
+      "...",
+      new CssMinimizerPlugin(),
+    ],
   },
   module: {
     rules: [
@@ -26,7 +35,7 @@ module.exports = {
         test: /\.(css|s[c|a]ss)$/,
         exclude: /node_modules/,
         use: [
-          { loader: "style-loader" },
+          { loader: MiniCssExtractPlugin.loader },
           {
             loader: "css-loader",
             options: { sourceMap: true }
@@ -36,7 +45,7 @@ module.exports = {
             options: {
               postcssOptions: {
                 plugins: [
-                  require("autoprefixer")
+                  autoprefixer
                 ],
               },
             }
@@ -53,6 +62,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       filename: "index.html"
-    })
+    }),
+    new MiniCssExtractPlugin()
   ]
 };
