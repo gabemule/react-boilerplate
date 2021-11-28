@@ -1,4 +1,4 @@
-const commonConfig = require("./webpack.common");
+const commonConfig = require("./app.common");
 
 const devConfig = {
   mode: "development",

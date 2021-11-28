@@ -1,20 +1,19 @@
 {
   "name": "@gabemule/react-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Custom React Boilerplate",
+  "main": "src/index.js",
   "scripts": {
-    "build": "webpack --config config/webpack.prod.js",
+    "build": "webpack --config .webpack/app.prod.js",
     "clear": "npm run clear:dependencies && npm run clear:dist",
     "clear:deps": "rimraf node_modules/",
     "clear:dist": "rimraf dist/",
     "lint": "eslint src --fix",
     "sb": "start-storybook -p 6006",
     "sb:build": "build-storybook",
-    "serve": "webpack-dev-server --open --hot --config config/webpack.dev.js"
+    "serve": "webpack-dev-server --open --hot --config .webpack/app.dev.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Gabriel Mule <gabemule@gmail.com>",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
