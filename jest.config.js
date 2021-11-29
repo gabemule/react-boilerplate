@@ -15,11 +15,11 @@ module.exports = {
   // An array of file extensions your modules use
   moduleFileExtensions: ["js", "json", "jsx"],
   moduleNameMapper: {
-    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/.tests/file.mock.js",
-    "\\.(css|less|scss|sass)$": "<rootDir>/.tests/style.mock.js"
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/.jest/file.mock.js",
+    "\\.(css|less|scss|sass)$": "<rootDir>/.jest/style.mock.js"
   },
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  setupFilesAfterEnv: ["<rootDir>/.tests/enzyme.config.js"],
+  setupFilesAfterEnv: ["<rootDir>/.jest/enzyme.config.js"],
   // The test environment that will be used for testing
   testEnvironment: "jsdom",
   // The glob patterns Jest uses to detect test files
