@@ -27,17 +27,9 @@ module.exports = {
         test: /\.(css|s[c|a]ss)$/,
         exclude: /node_modules/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader
-          },
-          {
-            loader: "css-loader",
-            options: {
-              sourceMap: true
-            }
-          },
-          {
-            loader: "postcss-loader",
+          { loader: MiniCssExtractPlugin.loader },
+          { loader: "css-loader", options: { sourceMap: true  } },
+          { loader: "postcss-loader",
             options: {
               postcssOptions: {
                 plugins: [
@@ -45,7 +37,8 @@ module.exports = {
                 ],
               },
             }
-          }
+          },
+          { loader: "sass-loader", options: { sourceMap: true } }
         ]
       },
       {
