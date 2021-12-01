@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/bundle.js",
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "../dist/lib"),
+    path: path.resolve(__dirname, "../dist"),
     clean: true,
     libraryTarget: "umd"
   },

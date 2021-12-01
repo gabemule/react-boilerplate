@@ -8,8 +8,7 @@ import "@/app.scss";
 import Router from "@/app/router";
 
 // import global library css
-import "@gabemule/react-boilerplate/dist/lib/main.css";
-
+import "@gabemule/react-boilerplate/dist/main.css";
 
 /**
  * App returns the global structure

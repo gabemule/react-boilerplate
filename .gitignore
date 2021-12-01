@@ -1,4 +1,15 @@
+# user related
+.idea/
+.vscode
+*.sublime*
+
+# dependencies
 node_modules/
+
+# tests
 coverage/
+
+# generated folders
 dist/
-lib/
+app-build/
+storybook-build/
