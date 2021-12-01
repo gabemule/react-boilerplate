@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 
 // Components
-import Button from "./Button";
+import { Button } from "@/components/Button";
 
 // Constants
 const BUTTON_COMPONENT_TEXT = "Button Component";

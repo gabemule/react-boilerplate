@@ -1,14 +1,14 @@
 const path = require("path");
 const autoprefixer = require("autoprefixer");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./src/app.js",
+  entry: "./src/bundle.js",
   output: {
-    filename: "[name].[contenthash].js",
-    path: path.resolve(__dirname, "../dist/app"),
-    clean: true
+    filename: "[name].js",
+    path: path.resolve(__dirname, "../dist/lib"),
+    clean: true,
+    libraryTarget: "umd"
   },
   resolve: {
     extensions: [".jsx", ".js", ".json"],
@@ -55,12 +55,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "./public/index.html",
-      filename: "index.html"
-    }),
     new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
+      filename: "[name].css",
       chunkFilename: "[id].[contenthash].css",
     })
   ]

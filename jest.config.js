@@ -16,7 +16,8 @@ module.exports = {
   moduleFileExtensions: ["js", "json", "jsx"],
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/.jest/file.mock.js",
-    "\\.(css|less|scss|sass)$": "<rootDir>/.jest/style.mock.js"
+    "\\.(css|less|scss|sass)$": "<rootDir>/.jest/style.mock.js",
+    "^@/(.*)$": "<rootDir>/src/$1"
   },
   // The paths to modules that run some code to configure or set up the testing environment before each test
   setupFilesAfterEnv: ["<rootDir>/.jest/enzyme.config.js"],

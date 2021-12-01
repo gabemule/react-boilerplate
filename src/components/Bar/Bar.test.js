@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 
 // Components
-import Bar from "./Bar";
+import { Bar } from "@/components/Bar";
 
 // Constants
 const BAR_COMPONENT_TEXT = "Bar Component";

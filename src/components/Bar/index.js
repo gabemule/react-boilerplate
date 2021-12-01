@@ -1,3 +1,3 @@
 import Bar from "./Bar";
 
-export default Bar;
+export { Bar };

@@ -4,9 +4,10 @@ import React from "react";
 import MyImage from "@/assets/img/dog.jpg";
 
 // components
-import Bar from "@/components/Bar";
-import Foo from "@/components/Foo";
-import Button from "@/components/Button";
+// import { Bar } from "@/components/Bar";
+// import { Foo } from "@/components/Foo";
+// import Button from "@/components/Button";
+import { Bar, Button, Foo } from "@gabemule/react-boilerplate";
 
 const Home = () => {
   return (

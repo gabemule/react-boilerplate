@@ -2,16 +2,15 @@
   "name": "@gabemule/react-boilerplate",
   "version": "1.0.0",
   "description": "A Custom React Boilerplate",
-  "main": "src/index.js",
+  "main": "dist/lib/main.js",
   "scripts": {
-    "build": "webpack --config .webpack/app.prod.js",
-    "clear": "npm run clear:dependencies && npm run clear:dist",
-    "clear:deps": "rimraf node_modules/",
-    "clear:dist": "rimraf dist/",
+    "build:app": "webpack --config .webpack/app.prod.js",
+    "build:lib": "webpack --config .webpack/lib.prod.js",
+    "dev:app": "webpack-dev-server --open --hot --config .webpack/app.dev.js",
+    "dev:lib": "webpack --config .webpack/lib.dev.js --watch --progress",
     "lint": "eslint src --fix",
     "sb": "start-storybook -p 6006",
     "sb:build": "build-storybook",
-    "serve": "webpack-dev-server --open --hot --config .webpack/app.dev.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors"
@@ -21,7 +20,8 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^6.0.2"
+    "react-router-dom": "^6.0.2",
+    "@gabemule/react-boilerplate": "file:./"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

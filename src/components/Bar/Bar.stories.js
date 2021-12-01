@@ -1,5 +1,5 @@
 import React from "react";
-import Bar from "@/components/Bar";
+import { Bar } from "@/components/Bar";
 
 const componentProps = {
   title: "Components/Bar",

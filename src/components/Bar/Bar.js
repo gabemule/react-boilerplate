@@ -1,7 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import "./bar.scss";
-import PropTypes from "prop-types";
 
 const Bar = ({children}) => {
   return (
