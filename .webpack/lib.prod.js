@@ -5,7 +5,6 @@ const prodConfig = {
   mode: "production",
   optimization: {
     moduleIds: 'deterministic',
-    runtimeChunk: 'single',
     minimizer: [
       "...",
       new CssMinimizerPlugin(),
