@@ -1,6 +1,9 @@
 const path = require("path");
 const autoprefixer = require("autoprefixer");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPkgJsonPlugin = require("copy-pkg-json-webpack-plugin")
+
+const pkg = require('../package.json');
 
 module.exports = {
   entry: "./src/bundle.js",
@@ -55,6 +58,17 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].[contenthash].css",
+    }),
+    new CopyPkgJsonPlugin({
+      new: {
+        name: pkg.name,
+        version: pkg.version,
+        description: pkg.description,
+        main: "main.js",
+        author: pkg.author,
+        repository: pkg.repository,
+        peerDependencies: pkg.peerDependencies
+      }
     })
   ]
 };

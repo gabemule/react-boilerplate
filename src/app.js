@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 // import global app scss
-import "@/app.scss";
+import "@/assets/styles/app.scss";
 
 // import global components
 import Router from "@/app/router";
 
 // import global library css
-import "@gabemule/react-boilerplate/dist/main.css";
+import "@gabemule/react-boilerplate/main.css";
 
 /**
  * App returns the global structure
