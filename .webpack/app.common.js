@@ -25,7 +25,6 @@ module.exports = {
       },
       {
         test: /\.(css|s[c|a]ss)$/,
-        exclude: /node_modules/,
         use: [
           { loader: MiniCssExtractPlugin.loader },
           { loader: "css-loader", options: { sourceMap: true  } },

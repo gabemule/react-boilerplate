@@ -7,6 +7,8 @@ module.exports = {
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: [
     "src/**/*.{js,jsx,mjs}",
+    "!src/app.js",
+    "!src/bundle.js",
     "!src/**/*.stories.js",
     "!src/**/index.js"
   ],
