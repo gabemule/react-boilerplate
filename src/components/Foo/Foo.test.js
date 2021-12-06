@@ -21,7 +21,7 @@ function setup(props) {
 describe("Foo Test Suite", () => {
   it("Should match snapshot", () => {
     expect(Foo).toMatchSnapshot();
-  })
+  });
   it("Should have class", () => {
     const { wrapper } = setup();
     expect(wrapper.find(FOO_COMPONENT_CLASS).exists()).toBe(true);
