@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Provider} from 'react-redux'
+import { Provider } from 'react-redux'
 
 // import global app scss
 import '@/assets/styles/app.scss'
@@ -20,14 +20,11 @@ import Store from '@/store'
  * @constructor
  */
 const App = () => {
-	return (
-		<Provider store={Store}>
-			<Router />
-		</Provider>
-	)
+  return (
+    <Provider store={Store}>
+      <Router />
+    </Provider>
+  )
 }
 
-ReactDOM.render(
-	<App />,
-	document.querySelector('#root')
-)
+ReactDOM.render(<App />, document.querySelector('#root'))

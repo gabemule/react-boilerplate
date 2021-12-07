@@ -2,11 +2,6 @@
 import useInitialSetting from './selectors'
 
 // Actions creators
-import {
-	setInitialSetting
-} from './actionCreators'
+import { setInitialSetting } from './actionCreators'
 
-export {
-	useInitialSetting,
-	setInitialSetting
-}
+export { useInitialSetting, setInitialSetting }
