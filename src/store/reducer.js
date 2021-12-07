@@ -1,9 +1,9 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux'
 
-import InitialSetting from "./InitialSetting/reducer";
+import InitialSetting from './InitialSetting/reducer'
 
 const reducers = combineReducers({
-  InitialSetting: InitialSetting,
-});
+	InitialSetting: InitialSetting,
+})
 
-export default reducers;
+export default reducers

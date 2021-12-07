@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react'
 
-import "./foo.scss";
-import PropTypes from "prop-types";
+import './foo.scss'
+import PropTypes from 'prop-types'
 
 const Foo = ({children}) => {
-  return (
-    <div className={"foo"}>
-      {children}
-    </div>
-  );
-};
+	return (
+		<div className={'foo'}>
+			{children}
+		</div>
+	)
+}
 
 Foo.propTypes = {
-  children: PropTypes.any,
-};
+	children: PropTypes.any,
+}
 
-export default Foo;
+export default Foo

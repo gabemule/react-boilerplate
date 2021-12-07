@@ -1,14 +1,14 @@
-import React from "react";
-import { Foo } from "@/components/Foo";
+import React from 'react'
+import { Foo } from '@/components/Foo'
 
 const componentProps = {
-  title: "Components/Foo",
-  component: Foo,
-};
+	title: 'Components/Foo',
+	component: Foo,
+}
 
 
-export default componentProps;
+export default componentProps
 
-const Template = (args) => <Foo {...args}> Foo Component </Foo>;
+const Template = (args) => <Foo {...args}> Foo Component </Foo>
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})

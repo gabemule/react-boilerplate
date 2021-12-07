@@ -1,12 +1,12 @@
 // Selector
-import useInitialSetting from "./selectors";
+import useInitialSetting from './selectors'
 
 // Actions creators
 import {
-  setInitialSetting
-} from "./actionCreators";
+	setInitialSetting
+} from './actionCreators'
 
 export {
-  useInitialSetting,
-  setInitialSetting
+	useInitialSetting,
+	setInitialSetting
 }
