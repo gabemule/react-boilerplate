@@ -20,11 +20,11 @@ import Store from '@/store'
  * @constructor
  */
 const App = () => {
-  return (
-    <Provider store={Store}>
-      <Router />
-    </Provider>
-  )
+	return (
+		<Provider store={Store}>
+			<Router />
+		</Provider>
+	)
 }
 
 ReactDOM.render(<App />, document.querySelector('#root'))

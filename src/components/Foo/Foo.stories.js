@@ -2,8 +2,8 @@ import React from 'react'
 import { Foo } from '@/components/Foo'
 
 const componentProps = {
-  title: 'Components/Foo',
-  component: Foo
+	title: 'Components/Foo',
+	component: Foo
 }
 
 export default componentProps
