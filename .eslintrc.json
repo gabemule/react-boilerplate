@@ -27,6 +27,7 @@
     "react",
     "react-hooks"
   ],
+  "ignorePatterns": ["**/*.scss"],
   "rules": {
     "linebreak-style": ["warn", "unix"],
     "no-unused-vars": "warn",
