@@ -8,7 +8,6 @@ const Bar = ({ children }) => {
 }
 
 Bar.propTypes = {
-  amigo: PropTypes.any,
   children: PropTypes.any
 }
 
