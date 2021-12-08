@@ -1,5 +1,6 @@
 .bar {
   $self: &;
+
   background-color: #f2f2f2;
   #{ $self }__child-element {
     background: black;
