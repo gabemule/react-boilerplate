@@ -1,8 +1,8 @@
-import {useSelector} from "react-redux";
+import { useSelector } from 'react-redux'
 
 const useInitialSetting = () => {
   const { isInitialized } = useSelector((state) => ({
-    isInitialized: state.InitialSetting.isInitialized,
+    isInitialized: state.InitialSetting.isInitialized
   }))
 
   return {
@@ -10,4 +10,4 @@ const useInitialSetting = () => {
   }
 }
 
-export default useInitialSetting;
+export default useInitialSetting

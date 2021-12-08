@@ -1,16 +1,15 @@
-import createReducer from "../createReducer";
-import {INITIAL_SETTING_SET} from "./actions";
+import createReducer from '../createReducer'
+import { INITIAL_SETTING_SET } from './actions'
 
 export const initialState = {
-  isInitialized: false,
-};
+  isInitialized: false
+}
 
 const reducer = createReducer(initialState, {
-
   [INITIAL_SETTING_SET]: (state, action) => ({
     ...state,
-    isInitialized: action.payload.isInitialized,
-  }),
-});
+    isInitialized: action.payload.isInitialized
+  })
+})
 
-export default reducer;
+export default reducer

@@ -1,17 +1,14 @@
-import React from "react";
+import React from 'react'
 import { useDispatch } from 'react-redux'
 
 // assets
-import MyImage from "@/assets/img/dog.jpg";
+import MyImage from '@/assets/img/dog.jpg'
 
 // components
-import { Bar, Button, Foo } from "@gabemule/react-boilerplate";
+import { Bar, Button, Foo } from '@gabemule/react-boilerplate'
 
 // InitialSetting store
-import {
-  setInitialSetting,
-  useInitialSetting
-} from "@/store/InitialSetting";
+import { setInitialSetting, useInitialSetting } from '@/store/InitialSetting'
 
 const Home = () => {
   const dispatch = useDispatch()
@@ -19,26 +16,26 @@ const Home = () => {
   const { isInitialized } = useInitialSetting()
 
   return (
-    <div className={"home"}>
+    <div className={'home'}>
       <Bar>
         <h1> Home </h1>
       </Bar>
       <Foo>
         <Button
-          primary={true}
-          size={"large"}
-          label={"Click Me"}
+          label={'Click Me'}
           onClick={() => {
             alert(`Clicked! Change isInitialized to: ${!isInitialized}`)
             dispatch(setInitialSetting(!isInitialized))
           }}
+          primary={true}
+          size={'large'}
         />
       </Foo>
       <Bar>
-        <img src={MyImage} alt={"home image"} />
+        <img alt={'home image'} src={MyImage} />
       </Bar>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

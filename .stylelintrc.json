@@ -1,0 +1,40 @@
+{
+  "ignoreFiles": [
+    "./node_modules/**/*.css",
+    "./node_modules/**/*.js",
+    "**/*.js",
+    "./dist/*.css",
+    "./*.md"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier",
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "alpha-value-notation": "number",
+    "color-function-notation": "legacy",
+    "declaration-block-no-shorthand-property-overrides": null,
+    "font-family-name-quotes": "always-where-recommended",
+    "font-family-no-missing-generic-family-keyword": true,
+    "max-nesting-depth": 4,
+    "number-leading-zero": "always",
+    "no-descending-specificity": null,
+    "string-quotes": "single",
+    "selector-max-compound-selectors": 3,
+    "selector-class-pattern": null,
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "rules"
+    ],
+    "order/properties-alphabetical-order": true,
+    "scss/at-rule-no-unknown": true,
+    "scss/comment-no-empty": null,
+    "scss/map-keys-quotes": null
+  }
+}

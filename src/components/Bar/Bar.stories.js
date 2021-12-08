@@ -1,14 +1,13 @@
-import React from "react";
-import { Bar } from "@/components/Bar";
+import React from 'react'
+import { Bar } from '@/components/Bar'
 
 const componentProps = {
-  title: "Components/Bar",
-  component: Bar,
-};
+  title: 'Components/Bar',
+  component: Bar
+}
 
+export default componentProps
 
-export default componentProps;
+const Template = (args) => <Bar {...args}> Bar Component </Bar>
 
-const Template = (args) => <Bar {...args}> Bar Component </Bar>;
-
-export const Default = Template.bind({});
+export const Default = Template.bind({})
