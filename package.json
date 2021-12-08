@@ -15,6 +15,7 @@
     "lint:scss": "stylelint src/*.scss --max-warnings=0",
     "fix:js": "eslint src --fix",
     "fix:scss": "stylelint src/**/*/*.scss --fix",
+    "fix:all": "npm run fix:js && npm run fix:scss",
     "stylelint-check": "stylelint-config-prettier-check",
     "test": "jest",
     "test:watch": "jest --watch",
