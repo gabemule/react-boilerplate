@@ -28,7 +28,6 @@
     "react-hooks"
   ],
   "rules": {
-    "indent": ["warn", "tab"],
     "linebreak-style": ["warn", "unix"],
     "no-unused-vars": "warn",
     "react-hooks/exhaustive-deps": "warn",
