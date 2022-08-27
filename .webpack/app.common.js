@@ -1,19 +1,22 @@
 const path = require("path");
 const autoprefixer = require("autoprefixer");
+const postcssSVG = require('postcss-svg');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./src/app.js",
   output: {
+    assetModuleFilename: 'assets/[hash][ext][query]',
+    clean: true,
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "../app-build"),
-    clean: true
   },
   resolve: {
     extensions: [".jsx", ".js", ".json"],
     alias: {
-      "@": path.resolve(__dirname, "../src")
+      "@": path.resolve(__dirname, "../src"),
+      "@gabemule/react-boilerplate": path.resolve(__dirname, "../dist"),
     },
   },
   module: {
@@ -27,12 +30,14 @@ module.exports = {
         test: /\.(css|s[c|a]ss)$/,
         use: [
           { loader: MiniCssExtractPlugin.loader },
-          { loader: "css-loader", options: { sourceMap: true  } },
-          { loader: "postcss-loader",
+          { loader: "css-loader", options: { sourceMap: true } },
+          {
+            loader: "postcss-loader",
             options: {
               postcssOptions: {
                 plugins: [
-                  autoprefixer
+                  autoprefixer,
+                  postcssSVG
                 ],
               },
             }
@@ -42,7 +47,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
-        loader: "url-loader"
+        type: "asset/resource"
       }
     ]
   },

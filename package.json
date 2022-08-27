@@ -4,18 +4,19 @@
   "description": "A Custom React Boilerplate",
   "main": "dist/main.js",
   "scripts": {
-    "build:app": "webpack --config .webpack/app.prod.js",
+    "build:app": "yarn build:lib && webpack --config .webpack/app.prod.js",
     "build:lib": "webpack --config .webpack/lib.prod.js",
-    "build:sb": "build-storybook -o storybook-build/",
-    "dev": "concurrently --kill-others 'npm run dev:lib' 'npm run dev:app'",
+    "build:sb": "yarn build:lib && build-storybook -o storybook-build/",
+    "dev": "concurrently --kill-others 'yarn dev:lib' 'yarn dev:app'",
     "dev:app": "webpack-dev-server --open --hot --config .webpack/app.dev.js",
     "dev:lib": "webpack --config .webpack/lib.dev.js --watch --progress",
     "dev:sb": "start-storybook -p 6006",
+    "lint:all": "yarn lint:js && yarn lint:scss",
     "lint:js": "eslint src --max-warnings=0",
-    "lint:scss": "stylelint src/*.scss --max-warnings=0",
+    "lint:scss": "stylelint src/**/*.scss --max-warnings=0",
+    "fix:all": "yarn fix:js && yarn fix:scss",
     "fix:js": "eslint src --fix",
-    "fix:scss": "stylelint src/**/*/*.scss --fix",
-    "fix:all": "npm run fix:js && npm run fix:scss",
+    "fix:scss": "stylelint src/**/*.scss --fix",
     "stylelint-check": "stylelint-config-prettier-check",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -24,16 +25,15 @@
   },
   "lint-staged": {
     "src/**/*.js": [
-      "npm run lint:js"
+      "yarn lint:js"
     ],
     "src/**/*.scss": [
-      "npm run lint:scss"
+      "yarn lint:scss"
     ]
   },
   "author": "Gabriel Mule <gabemule@gmail.com>",
   "repository": "https://github.com/gabemule/react-boilerplate",
   "dependencies": {
-    "@gabemule/react-boilerplate": "file:./dist/",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
@@ -79,6 +79,7 @@
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.3.11",
     "postcss-loader": "^6.2.0",
+    "postcss-svg": "^3.0.0",
     "prettier": "2.5.1",
     "rimraf": "^3.0.2",
     "sass": "^1.44.0",

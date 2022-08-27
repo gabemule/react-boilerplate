@@ -8,10 +8,11 @@ const pkg = require('../package.json');
 module.exports = {
   entry: "./src/bundle.js",
   output: {
+    assetModuleFilename: 'assets/[hash][ext][query]',
     filename: "[name].js",
     path: path.resolve(__dirname, "../dist"),
     clean: true,
-    libraryTarget: "umd"
+    libraryTarget: "umd",
   },
   resolve: {
     extensions: [".jsx", ".js", ".json"],
@@ -34,8 +35,9 @@ module.exports = {
         test: /\.(css|s[c|a]ss)$/,
         use: [
           { loader: MiniCssExtractPlugin.loader },
-          { loader: "css-loader", options: { sourceMap: true  } },
-          { loader: "postcss-loader",
+          { loader: "css-loader", options: { sourceMap: true } },
+          {
+            loader: "postcss-loader",
             options: {
               postcssOptions: {
                 plugins: [
@@ -49,7 +51,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
-        loader: "url-loader"
+        type: "asset/resource"
       }
     ]
   },

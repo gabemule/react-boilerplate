@@ -22,9 +22,7 @@
     "font-family-name-quotes": "always-where-recommended",
     "font-family-no-missing-generic-family-keyword": true,
     "max-nesting-depth": 4,
-    "number-leading-zero": "always",
     "no-descending-specificity": null,
-    "string-quotes": "single",
     "selector-max-compound-selectors": 3,
     "selector-class-pattern": null,
     "order/order": [

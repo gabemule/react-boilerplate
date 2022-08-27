@@ -1,4 +1,4 @@
-import "@/app.scss";
+import "@gabemule/react-boilerplate/main.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
