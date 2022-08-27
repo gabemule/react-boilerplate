@@ -1,0 +1,12 @@
+/**
+ * Breakpoint Function
+ */
+
+@function breakpoint($key) {
+  @if map-has-key($breakpoint, $key) {
+    @return map-get($breakpoint, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $breakpoint.";
+  @return null;
+}

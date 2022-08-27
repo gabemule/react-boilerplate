@@ -3,7 +3,7 @@ const path = require("path")
 module.exports = ({ config }) => {
     config.resolve.alias = {
         "@": path.resolve(__dirname, "..", "src"),
-        "@gabemule/react-boilerplate": path.resolve(__dirname, "../dist"),
+        "@gabemule/design-system": path.resolve(__dirname, "../dist"),
     }
 
     config.module.rules.push({

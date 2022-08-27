@@ -1,0 +1,22 @@
+/**
+ * Device Mixins
+ *
+ * Usage:
+ * .class {
+ *   @include small {
+ *       padding: 0 20px;
+ *   }
+ *   @include mobile {
+ *       padding: 0 60px;
+ *   }
+ * }
+ */
+
+@use "sass:map";
+
+// mobile devices
+@mixin mobile {
+  @media (max-width: map.get($breakpoint, "mobile")) {
+    @content;
+  }
+}

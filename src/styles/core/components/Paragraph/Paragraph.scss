@@ -1,0 +1,13 @@
+.ds-paragraph {
+  $self: &;
+
+  font-family: var(--font-family__base);
+
+  &--large {
+    font-size: $font__size--xs;
+  }
+
+  &--small {
+    font-size: $font__size--xxs;
+  }
+}

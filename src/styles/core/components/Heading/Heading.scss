@@ -1,0 +1,46 @@
+.ds-heading {
+  $self: &;
+
+  font-family: var(--font-family__base);
+  font-weight: var(--font-weight__bold);
+
+  &--display {
+    font-size: $font__size--giant;
+    font-family: var(--font-family__highlight);
+    @include mobile {
+      font-size: $font__size--xl;
+    }
+  }
+
+  &--x-large {
+    font-size: $font__size--huge;
+    @include mobile {
+      font-size: $font__size--lg;
+    }
+  }
+
+  &--large {
+    font-size: $font__size--xxl;
+    @include mobile {
+      font-size: $font__size--md;
+    }
+  }
+
+  &--medium {
+    font-size: $font__size--md;
+    @include mobile {
+      font-size: $font__size--sm;
+    }
+  }
+
+  &--small {
+    font-size: $font__size--sm;
+    @include mobile {
+      font-size: $font__size--xs;
+    }
+  }
+
+  &--x-small {
+    font-size: $font__size--xxs;
+  }
+}

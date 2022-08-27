@@ -1,0 +1,14 @@
+// core styles
+@import '@/styles/core';
+
+// core root
+@import "@/styles/core/root";
+
+// library scoped styles
+[data-library="core"] {
+  // core theme
+  @import '@/styles/core/theme';
+
+  // components styles
+  @import '@/styles/core/components/index';
+}

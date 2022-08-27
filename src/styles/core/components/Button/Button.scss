@@ -1,0 +1,158 @@
+.ds-button {
+  $self: &;
+
+  font-family: $button__font--family;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $button__font--family;
+    font-weight: $button__font--weight;
+  }
+
+  &__icon {
+    margin-left: $spacing--nano;
+  }
+
+  // Size modifiers
+  &--large {
+    height: gettoken($button__large, "height");
+    border-radius: gettoken($button__large, "border-radius");
+    padding: gettoken($button__large, "padding");
+
+    .ds-button__text {
+      font-size: gettoken($button__large, "font-size");
+    }
+  }
+
+  &--medium {
+    height: gettoken($button__medium, "height");
+    border-radius: gettoken($button__medium, "border-radius");
+    padding: gettoken($button__medium, "padding");
+
+    .ds-button__text {
+      font-size: gettoken($button__medium, "font-size");
+    }
+  }
+
+  &--small {
+    height: gettoken($button__small, "height");
+    border-radius: gettoken($button__small, "border-radius");
+    padding: gettoken($button__small, "padding");
+
+    .ds-button__text {
+      font-size: gettoken($button__small, "font-size");
+    }
+  }
+
+  // Type modifiers
+  &--primary {
+    background: gettoken($button__primary, "background");
+    color: gettoken($button__primary, "color");
+    border: gettoken($button__primary, "border");
+
+    &:not(#{ $self }--disabled) {
+      &:hover {
+        background: gettoken($button__primary--hover, "background");
+      }
+
+      &:focus {
+        outline-color: transparent;
+        outline-style: solid;
+        box-shadow: 0 0 0 3px var(--color__neutral--00),
+          0 0 0 5px var(--color__neutral--90);
+      }
+    }
+
+    &.ds-button--disabled {
+      background: gettoken($button__primary--disabled, "background");
+      color: gettoken($button__primary--disabled, "color");
+    }
+  }
+
+  &--secondary {
+    background: gettoken($button__secondary, "background");
+    color: gettoken($button__secondary, "color");
+    border: gettoken($button__secondary, "border");
+
+    &:not(#{ $self }--disabled) {
+      &::after {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      &:hover {
+        background: gettoken($button__secondary--hover, "background");
+        color: gettoken($button__secondary--hover, "color");
+
+        & #{ $self }--icon {
+          color: var(--button-text-color__secondary--hover);
+          background: var(--button-background-color__secondary--hover);
+        }
+
+        & #{ $self }--text {
+          color: var(--button-text-color__secondary--hover);
+        }
+      }
+    }
+
+    &.ds-button--disabled {
+      background: gettoken($button__secondary--disabled, "background");
+      border-color: gettoken($button__secondary--disabled, "color");
+      color: gettoken($button__secondary--disabled, "color");
+    }
+  }
+
+  &--warning {
+    background: gettoken($button__warning, "background");
+    color: gettoken($button__warning, "color");
+
+    &:not(#{ $self }--disabled) {
+      &:hover {
+        background: gettoken($button__warning--hover, "background");
+      }
+    }
+
+    &.ds-button--disabled {
+      background: gettoken($button__warning--disabled, "background");
+      color: gettoken($button__warning--disabled, "color");
+    }
+  }
+
+  &--danger {
+    background: gettoken($button__danger, "background");
+    color: gettoken($button__danger, "color");
+
+    &:not(#{ $self }--disabled) {
+      &:hover {
+        background: gettoken($button__danger--hover, "background");
+      }
+    }
+
+    &.ds-button--disabled {
+      background: gettoken($button__danger--disabled, "background");
+      color: gettoken($button__danger--disabled, "color");
+    }
+  }
+
+  &--disabled {
+    outline: none;
+    cursor: not-allowed;
+    color: gettoken($button__disabled, "color");
+
+    & #{ $self }__button-text {
+      background: var(--color__neutral--10);
+      color: gettoken($button__disabled, "color");
+    }
+
+    & #{ $self }__icon {
+      background: gettoken($button__disabled, "background");
+    }
+  }
+}

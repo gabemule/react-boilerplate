@@ -1,0 +1,73 @@
+&[data-theme="light"] {
+  --background-color: var(--color__neutral--00);
+  --text-color: var(--color__neutral--90);
+
+  // input 
+  --input-background: var(--color__neutral--00);
+  --input-border-color: var(--color__neutral--90);
+  --input-border-color--disable: var(--color__neutral--20);
+  --input-text-color: var(--color__neutral--90);
+
+  // Tooltip
+  --tooltip-background-color: var(--color__neutral--90);
+  --tooltip-text-color: var(--color__neutral--00);
+
+  // Button - primary
+  --button-text-color__primary: var(--color__neutral--90);
+  --button-background-color__primary: var(--color__brand);
+  --button-background-color__primary--hover: var(--color__brand--light);
+  --button-background-color__primary--disabled: var(--color__neutral--10);
+
+  // Button - secondary
+  --button-background-color__secondary: var(--color__neutral--00);
+  --button-background-color__secondary--hover: var(--color__neutral--90);
+  --button-background-color__secondary--disabled: var(--color__neutral--00);
+  --button-text-color__secondary: var(--color__neutral--90);
+  --button-text-color__secondary--hover: var(--color__neutral--00);
+  --button-text-color__secondary--disabled: var(--color__neutral--40);
+
+  // Accordion
+  --accordion-background-color: var(--color__neutral--00);
+  --accordion-background-color--hover: var(--color__neutral--05);
+  --accordion-title-color: var(--color__neutral--90);
+  --accordion-title-color--disabled: var(--color__neutral--40);
+  --accordion-content-color: var(--color__neutral--60);
+  --accordion-border-color: var(--color__neutral--60);
+}
+
+&[data-theme="dark"] {
+  --background-color: var(--color__neutral--90);
+  --text-color: var(--color__neutral--00);
+
+  //  input  
+  --input-background: var(--color__neutral--90);
+  --input-border-color: var(--color__neutral--00);
+  --input-border-color--disable: var(--color__neutral--40);
+  --input-text-color: var(--color__neutral--00);
+
+  // Tooltip
+  --tooltip-background-color: var(--color__neutral--00);
+  --tooltip-text-color: var(--color__neutral--60);
+
+  // Button - primary
+  --button-text-color__primary: var(--color__neutral--90);
+  --button-background-color__primary: var(--color__brand);
+  --button-background-color__primary--hover: var(--color__brand--light);
+  --button-background-color__primary--disabled: var(--color__neutral--10);
+
+  // Button - secondary
+  --button-background-color__secondary: var(--color__neutral--90);
+  --button-background-color__secondary--hover: var(--color__neutral--00);
+  --button-background-color__secondary--disabled: var(--color__neutral--90);
+  --button-text-color__secondary: var(--color__neutral--00);
+  --button-text-color__secondary--hover: var(--color__neutral--90);
+  --button-text-color__secondary--disabled: var(--color__neutral--60);
+
+  // Accordion
+  --accordion-background-color: var(--color__neutral--90);
+  --accordion-background-color--hover: var(--color__neutral--80);
+  --accordion-title-color: var(--color__neutral--00);
+  --accordion-title-color--disabled: var(--color__neutral--60);
+  --accordion-content-color: var(--color__neutral--20);
+  --accordion-border-color: var(--color__neutral--20);
+}

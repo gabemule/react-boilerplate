@@ -1,0 +1,14 @@
+// get token item in list
+@function getToken($list, $key) {
+  @if map-has-key($list, $key) {
+    @return map-get($list, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $list.";
+  @return null;
+}
+
+// merge token lists
+@function mergeToken($list1, $list2) {
+  @return map-merge($list1, $list2);
+}

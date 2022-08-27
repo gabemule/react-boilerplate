@@ -1,0 +1,22 @@
+// bees-bank
+$brand-gradiant: linear-gradient(46.18deg,
+        #ff0 19.1%,
+        #f9ff07 24.26%,
+        #ecff1c 31.63%,
+        #d5ff3e 40.47%,
+        #b5ff6d 50.78%,
+        #8cffaa 61.84%,
+        #5cfff3 73.62%,
+        #55fffe 75.83%);
+$color__brand: $brand-gradiant;
+$color__brand--light: #5cfff3;
+$color__brand--dark: #b5ff6d;
+$color__brand--darkest: #b5ff6d;
+
+// components
+
+// button
+
+$button__large: mergetoken($button__large, ('border-radius': $border__radius--sm));
+$button__medium: mergetoken($button__medium, ('border-radius': $border__radius--sm ));
+$button__small: mergetoken($button__small, ('border-radius': $border__radius--sm ));

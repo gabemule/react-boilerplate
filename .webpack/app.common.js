@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./src/app.js",
+  entry: "./src/app/app.tsx",
   output: {
     assetModuleFilename: 'assets/[hash][ext][query]',
     clean: true,
@@ -13,18 +13,21 @@ module.exports = {
     path: path.resolve(__dirname, "../app-build"),
   },
   resolve: {
-    extensions: [".jsx", ".js", ".json"],
+    extensions: [".jsx", ".js", ".json", ".ts", ".tsx"],
     alias: {
       "@": path.resolve(__dirname, "../src"),
-      "@gabemule/react-boilerplate": path.resolve(__dirname, "../dist"),
+      "@gabemule/design-system": path.resolve(__dirname, "../dist"),
     },
   },
   module: {
     rules: [
       {
-        test: /\.js$|jsx/,
-        loader: "babel-loader",
-        exclude: /node_modules/
+        test: /\.(j)s$|(j)sx/,
+        loader: "babel-loader"
+      },
+      {
+        test: /\.(t)s$|(t)sx/,
+        loader: "ts-loader"
       },
       {
         test: /\.(css|s[c|a]ss)$/,

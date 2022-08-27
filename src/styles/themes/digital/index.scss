@@ -1,0 +1,18 @@
+// global default variables
+@import '@/styles/core';
+
+// these are theme specific variables, 
+// they will overwrite the core ones if needed
+@import 'variables';
+
+// library scoped styles
+[data-library="digital"] {
+  // root scoped
+  @import 'root';
+
+  // this theme
+  @import 'theme';
+
+  // components styles
+  @import '@/styles/core/components';
+}

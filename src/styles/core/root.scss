@@ -1,0 +1,8 @@
+:root {
+  // colors
+  @include mix-colors;
+
+  // fonts
+  @include mix-font-family;
+  @include mix-font-weight;
+}

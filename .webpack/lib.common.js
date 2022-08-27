@@ -1,23 +1,16 @@
 const path = require("path");
 const autoprefixer = require("autoprefixer");
+const postcssSVG = require('postcss-svg');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPkgJsonPlugin = require("copy-pkg-json-webpack-plugin")
 
 const pkg = require('../package.json');
 
 module.exports = {
-  entry: "./src/bundle.js",
-  output: {
-    assetModuleFilename: 'assets/[hash][ext][query]',
-    filename: "[name].js",
-    path: path.resolve(__dirname, "../dist"),
-    clean: true,
-    libraryTarget: "umd",
-  },
   resolve: {
-    extensions: [".jsx", ".js", ".json"],
+    extensions: [".jsx", ".js", ".json", ".ts", ".tsx"],
     alias: {
-      "@": path.resolve(__dirname, "../src")
+      "@": path.resolve(__dirname, "../src"),
     },
   },
   externals: {
@@ -27,9 +20,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$|jsx/,
-        loader: "babel-loader",
-        exclude: /node_modules/
+        test: /\.(j)s$|(j)sx/,
+        loader: "babel-loader"
+      },
+      {
+        test: /\.(t)s$|(t)sx/,
+        loader: "ts-loader"
       },
       {
         test: /\.(css|s[c|a]ss)$/,
@@ -41,7 +37,8 @@ module.exports = {
             options: {
               postcssOptions: {
                 plugins: [
-                  autoprefixer
+                  autoprefixer,
+                  postcssSVG
                 ],
               },
             }
@@ -64,10 +61,7 @@ module.exports = {
       new: {
         name: pkg.name,
         version: pkg.version,
-        description: pkg.description,
         main: "main.js",
-        author: pkg.author,
-        repository: pkg.repository,
         peerDependencies: pkg.peerDependencies
       }
     })

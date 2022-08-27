@@ -1,0 +1,128 @@
+.ds-icon {
+  background-color: $color__neutral--90;
+  display: inline-block;
+  height: $spacing--xxs;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  width: $spacing--xxs;
+
+  &__color--brand {
+    background-color: $color__brand;
+  }
+
+  &__color--brand-light {
+    background-color: $color__brand--light;
+  }
+
+  &__color--brand-dark {
+    background-color: $color__brand--dark;
+  }
+
+  &__color--brand-darkest {
+    background-color: $color__brand--darkest;
+  }
+
+  &__color--neutral-90 {
+    background-color: $color__neutral--90;
+  }
+
+  &__color--neutral-80 {
+    background-color: $color__neutral--80;
+  }
+
+  &__color--neutral-60 {
+    background-color: $color__neutral--60;
+  }
+
+  &__color--neutral-40 {
+    background-color: $color__neutral--40;
+  }
+
+  &__color--neutral-20 {
+    background-color: $color__neutral--20;
+  }
+
+  &__color--neutral-10 {
+    background-color: $color__neutral--10;
+  }
+
+  &__color--neutral-05 {
+    background-color: $color__neutral--05;
+  }
+
+  &__color--neutral-00 {
+    background-color: $color__neutral--00;
+  }
+
+  &__color--highlight-primary {
+    background-color: $color__highlight-primary;
+  }
+
+  &__color--highlight-primary-light {
+    background-color: $color__highlight-primary--light;
+  }
+
+  &__color--highlight-primary-dark {
+    background-color: $color__highlight-primary--dark;
+  }
+
+  &__color--highlight-secondary {
+    background-color: $color__highlight-secondary;
+  }
+
+  &__color--highlight-secondary-light {
+    background-color: $color__highlight-secondary--light;
+  }
+
+  &__color--highlight-secondary-dark {
+    background-color: $color__highlight-secondary--dark;
+  }
+
+  &__color--success {
+    background-color: $color__success;
+  }
+
+  &__color--success-light {
+    background-color: $color__success--light;
+  }
+
+  &__color--success-dark {
+    background-color: $color__success--dark;
+  }
+
+  &__color--warning {
+    background-color: $color__warning;
+  }
+
+  &__color--warning-light {
+    background-color: $color__warning--light;
+  }
+
+  &__color--warning-dark {
+    background-color: $color__warning--dark;
+  }
+
+  &__color--danger {
+    background-color: $color__danger;
+  }
+
+  &__color--danger-light {
+    background-color: $color__danger--light;
+  }
+
+  &__color--danger-dark {
+    background-color: $color__danger--dark;
+  }
+
+  &__color--info {
+    background-color: $color__info;
+  }
+
+  &__color--info-light {
+    background-color: $color__info--light;
+  }
+
+  &__color--info-dark {
+    background-color: $color__info--dark;
+  }
+}

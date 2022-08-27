@@ -1,0 +1,55 @@
+// Aprova Nova Regular
+@font-face {
+  font-family: $font__family--base;
+  font-weight: $font__weight--regular;
+  font-style: normal;
+  src: url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Regular.eot');
+  src:
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Regular.svg#AprovaNova-Regular') format('svg'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Regular.ttf') format('truetype'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Regular.woff') format('woff'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Regular.woff2') format('woff2');
+}
+
+// Aprova Nova Bold
+@font-face {
+  font-family: $font__family--base;
+  font-weight: $font__weight--bold;
+  font-style: normal;
+  src: url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Bold.eot');
+  src:
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Bold.svg#AprovaNova-Bold') format('svg'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Bold.ttf') format('truetype'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Bold.woff') format('woff'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Bold.woff2') format('woff2');
+}
+
+// Aprova Nova Black
+@font-face {
+  font-family: $font__family--base;
+  font-weight: $font__weight--black;
+  font-style: normal;
+  src: url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Black.eot');
+  src:
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Black.eot?#iefix') format('embedded-opentype'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Black.svg#AprovaNova-Black') format('svg'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Black.ttf') format('truetype'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Black.woff') format('woff'),
+    url('@/styles/core/assets/fonts/aprova_nova/AprovaNova-Black.woff2') format('woff2');
+}
+
+// Vanguard CF
+@font-face {
+  font-family: $font__family--highlight;
+  font-weight: $font__weight--bold;
+  font-style: normal;
+  src: url('@/styles/core/assets/fonts/vanguard/VanguardCF-Bold.eot');
+  src:
+    url('@/styles/core/assets/fonts/vanguard/VanguardCF-Bold.eot?#iefix') format('embedded-opentype'),
+    url('@/styles/core/assets/fonts/vanguard/VanguardCF-Bold.svg#VanguardCF-Bold') format('svg'),
+    url('@/styles/core/assets/fonts/vanguard/VanguardCF-Bold.ttf') format('truetype'),
+    url('@/styles/core/assets/fonts/vanguard/VanguardCF-Bold.woff') format('woff'),
+    url('@/styles/core/assets/fonts/vanguard/VanguardCF-Bold.woff2') format('woff2');
+}
