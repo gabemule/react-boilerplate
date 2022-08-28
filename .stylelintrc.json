@@ -1,0 +1,41 @@
+{
+  "ignoreFiles": [
+    "./node_modules/**/*.css",
+    "./node_modules/**/*.js",
+    "**/*.js",
+    "./dist/*.css",
+    "./*.md"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier",
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "alpha-value-notation": "number",
+    "color-function-notation": "legacy",
+    "declaration-block-no-shorthand-property-overrides": null,
+    "font-family-name-quotes": "always-where-recommended",
+    "font-family-no-missing-generic-family-keyword": true,
+    "max-nesting-depth": 5,
+    "no-descending-specificity": null,
+    "no-invalid-position-at-import-rule": null,
+    "selector-max-compound-selectors": 5,
+    "custom-property-pattern": "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "scss/dollar-variable-pattern": "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "selector-class-pattern": null,
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "rules"
+    ],
+    "order/properties-alphabetical-order": null,
+    "scss/at-rule-no-unknown": true,
+    "scss/comment-no-empty": null,
+    "scss/map-keys-quotes": null
+  }
+}

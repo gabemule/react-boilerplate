@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Aprova Nova';
+    font-style:  normal;
+    font-weight: 500;
+    src: url("AprovaNova-Regular.otf") format("otf");
+}
+
+@font-face {
+    font-family: 'Aprova Nova';
+    font-style:  normal;
+    font-weight: 700;
+    src: url("AprovaNova-Bold.otf") format("otf");
+}
+
+@font-face {
+    font-family: 'Aprova Nova';
+    font-style:  normal;
+    font-weight: 900;
+    src: url("AprovaNova-Black.otf") format("otf");
+}

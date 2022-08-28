@@ -1,0 +1,45 @@
+/* ===== Variations Spacing ==== */
+$spacing--quark: 4px !default;
+$spacing--nano: 8px !default;
+$spacing--xxxs: 16px !default;
+$spacing--xxs: 24px !default;
+$spacing--xs: 32px !default;
+$spacing--sm: 40px !default;
+$spacing--md: 48px !default;
+$spacing--lg: 52px !default;
+$spacing--xl: 64px !default;
+$spacing--xxl: 80px !default;
+$spacing--xxxl: 120px !default;
+$spacing--huge: 160px !default;
+$spacing--giant: 200px !default;
+$spacing: (
+  'quark': $spacing--quark,
+  'nano': $spacing--nano,
+  'xxxs': $spacing--xxxs,
+  'xxs': $spacing--xxs,
+  'xs': $spacing--xs,
+  'sm': $spacing--sm,
+  'md': $spacing--md,
+  'lg': $spacing--lg,
+  'xl': $spacing--xl,
+  'xxl': $spacing--xxl,
+  'xxxl': $spacing--xxxl,
+  'huge': $spacing--huge,
+  'giant': $spacing--giant,
+  ) !default;
+
+/* ===== Inset Spacing ==== */
+$spacing__inset--quark: 4px !default;
+$spacing__inset--nano: 8px !default;
+$spacing__inset--xs: 16px !default;
+$spacing__inset--sm: 24px !default;
+$spacing__inset--md: 32px !default;
+$spacing__inset--lg: 40px !default;
+$spacing__inset: (
+  'quark': $spacing__inset--quark,
+  'nano': $spacing__inset--nano,
+  'xs': $spacing__inset--xs,
+  'sm': $spacing__inset--sm,
+  'md': $spacing__inset--md,
+  'lg': $spacing__inset--lg,
+  ) !default;

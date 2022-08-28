@@ -1,0 +1,10 @@
+@mixin mix-font-family {
+  --font-family__base: #{$font__family--base};
+  --font-family__highlight: #{$font__family--highlight};
+}
+
+@mixin mix-font-weight {
+  --font-weight__regular: #{$font__weight--regular};
+  --font-weight__bold: #{$font__weight--bold};
+  --font-weight__black: #{$font__weight--black};
+}

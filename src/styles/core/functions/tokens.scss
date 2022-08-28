@@ -1,0 +1,16 @@
+@use "sass:map";
+
+// get token item in list
+@function get-token($list, $key) {
+  @if map-has-key($list, $key) {
+    @return map.get($list, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $list.";
+  @return null;
+}
+
+// merge token lists
+@function merge-token($list1, $list2) {
+  @return map.merge($list1, $list2);
+}

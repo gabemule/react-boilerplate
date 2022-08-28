@@ -1,0 +1,17 @@
+@function font-weight($key) {
+  @if map-has-key($fontWeight, $key) {
+    @return map-get($fontWeight, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $fontWeight.";
+  @return null;
+}
+
+@function font-family($key) {
+  @if map-has-key($fontFamily, $key) {
+    @return map-get($fontFamily, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $fontFamily.";
+  @return null;
+}

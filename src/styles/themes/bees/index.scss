@@ -1,0 +1,18 @@
+// global core variables
+@import '@/styles/core/index';
+
+// these are theme specific variables, 
+// they will overwrite the default ones if needed
+@import 'variables';
+
+// library scoped styles
+[data-library="bees"] {
+  // root scoped
+  @import 'root';
+
+  // bees theme
+  @import 'theme';
+
+  // components styles
+  @import '@/styles/core/components/index';
+}

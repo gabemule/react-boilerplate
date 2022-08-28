@@ -1,0 +1,88 @@
+$button__font--family: var(--font-family__base) !default;
+$button__font--weight: var(--font-weight__bold) !default;
+
+// Size
+
+$button__large: (
+  'height': $spacing--xl,
+  'border-radius': $border__radius--pill,
+  'padding': 0 $spacing__inset--md,
+  'font-size': $font__size--xs,
+  ) !default;
+$button__medium: (
+  'height': $spacing--md,
+  'border-radius': $border__radius--pill,
+  'padding': 0 $spacing__inset--sm,
+  'font-size': $font__size--xxs,
+  ) !default;
+$button__small: (
+  'height': $spacing--sm,
+  'border-radius': $border__radius--pill,
+  'padding': 0 $spacing__inset--sm,
+  'font-size': $font__size--xxxs,
+  ) !default;
+
+
+// Disabled
+
+$button__disabled: (
+  'background': var(--color__neutral--40),
+  'color': var(--color__neutral--20),
+  ) !default;
+
+// Primary
+
+$button__primary: (
+  'background': var(--button-background-color__primary),
+  'color': var(--button-text-color__primary),
+  'border': none,
+  ) !default;
+$button__primary--hover: (
+  'background': var(--button-background-color__primary--hover),
+  ) !default;
+$button__primary--disabled: (
+  'background': var(--button-background-color__primary--disabled),
+  'color': var(--color__neutral--40),
+  ) !default;
+
+// Secondary
+
+$button__secondary: (
+  'background': var(--button-background-color__secondary),
+  'color': var(--button-text-color__secondary),
+  'border': 1px solid var(--button-text-color__secondary),
+  ) !default;
+$button__secondary--hover: (
+  'background': var(--button-background-color__secondary--hover),
+  'color': var(--button-text-color__secondary--hover),
+  ) !default;
+$button__secondary--disabled: (
+  'background': var(--button-background-color__secondary--disabled),
+  'border-color': var(--color__neutral--10),
+  'color': var(--button-text-color__secondary--disabled),
+  ) !default;
+
+// Warning
+
+$button__warning: (
+  'background': var(--color__warning),
+  'color': var(--color__neutral--90),
+  ) !default;
+$button__warning--hover: (
+  'background': var(--color__warning--light),
+  ) !default;
+$button__warning--disabled: (
+  'background': var(--color__neutral--10),
+  'color': var(--color__neutral--40),
+  ) !default;
+
+// Danger
+
+$button__danger: (
+  'background': var(--color__danger),
+  'color': var(--color__neutral--00)) !default;
+$button__danger--hover: (
+  'background': var(--color__danger--light)) !default;
+$button__danger--disabled: (
+  'background': var(--color__neutral--10),
+  'color': var(--color__neutral--40)) !default;

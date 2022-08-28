@@ -1,0 +1,54 @@
+// brand
+$color__brand: #E9256A;
+$color__brand--light: #F2C2D3;
+$color__brand--dark: #CC205D;
+$color__brand--darkest: #7f143a;
+
+// neutral
+$color__neutral--90: #2E2E33;
+$color__neutral--80: #313335;
+$color__neutral--60: #636769;
+$color__neutral--40: #B1B5B7;
+$color__neutral--20: #CACCCE;
+$color__neutral--10: #E5E6E7;
+$color__neutral--05: #F2F2F3;
+$color__neutral--00: #FFF;
+
+// highlight-primary
+$color__highlight-primary: #1F52D4;
+$color__highlight-primary--light: #BFD5FF;
+$color__highlight-primary--dark: #17365F;
+
+// highlight-secondary
+$color__highlight-secondary: #FED500;
+$color__highlight-secondary--light: #FFDE33;
+$color__highlight-secondary--dark: #998000;
+
+// success
+$color__success: #70C24A;
+$color__success--light: #A9E88B;
+$color__success--dark: #319C00;
+
+// warning
+$color__warning: #FFC043;
+$color__warning--light: #FFE3AC;
+$color__warning--dark: #997328;
+
+// danger
+$color__danger: #EB2C2C;
+$color__danger--light: #E55050;
+$color__danger--dark: #A61B1B;
+
+// info
+$color__info: #276EF1;
+$color__info--light: #9FBFF8;
+$color__info--dark: #174291;
+
+// components
+
+// button
+
+$button__large: merge-token($button__large, ('border-radius': $border__radius--none));
+$button__medium: merge-token($button__medium, ('border-radius': $border__radius--none ));
+$button__small: merge-token($button__small, ('border-radius': $border__radius--none ));
+$input__radius: $border__radius--none;

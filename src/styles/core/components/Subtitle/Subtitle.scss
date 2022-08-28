@@ -1,0 +1,19 @@
+.ds-subtitle {
+  $self: &;
+
+  font-family: var(--font-family__base);
+
+  &--large {
+    font-size: $font__size--md;
+    @include mobile {
+      font-size: $font__size--sm;
+    }
+  }
+
+  &--small {
+    font-size: $font__size--sm;
+    @include mobile {
+      font-size: $font__size--xs;
+    }
+  }
+}

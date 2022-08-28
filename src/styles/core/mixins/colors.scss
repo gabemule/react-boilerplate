@@ -1,0 +1,47 @@
+ @mixin mix-colors {
+   // brand
+   --color__brand : #{$color__brand};
+   --color__brand--light: #{$color__brand--light};
+   --color__brand--dark: #{$color__brand--dark};
+   --color__brand--darkest: #{$color__brand--darkest};
+
+   // neutral
+   --color__neutral--90: #{$color__neutral--90};
+   --color__neutral--80: #{$color__neutral--80};
+   --color__neutral--60: #{$color__neutral--60};
+   --color__neutral--40: #{$color__neutral--40};
+   --color__neutral--20: #{$color__neutral--20};
+   --color__neutral--10: #{$color__neutral--10};
+   --color__neutral--05: #{$color__neutral--05};
+   --color__neutral--00: #{$color__neutral--00};
+
+   // highlight-primary
+   --color__highlight-primary: #{$color__highlight-primary};
+   --color__highlight-primary--light: #{$color__highlight-primary--light};
+   --color__highlight-primary--dark: #{$color__highlight-primary--dark};
+
+   // highlight-secondary
+   --color__highlight-secondary: #{$color__highlight-secondary};
+   --color__highlight-secondary--light: #{$color__highlight-secondary--light};
+   --color__highlight-secondary--dark: #{$color__highlight-secondary--dark};
+
+   // success
+   --color__success: #{$color__success};
+   --color__success--light: #{$color__success--light};
+   --color__success--dark: #{$color__success--dark};
+
+   // warning
+   --color__warning: #{$color__warning};
+   --color__warning--light: #{$color__warning--light};
+   --color__warning--dark: #{$color__warning--dark};
+
+   // danger
+   --color__danger: #{$color__danger};
+   --color__danger--light: #{$color__danger--light};
+   --color__danger--dark: #{$color__danger--dark};
+
+   // info
+   --color__info: #{$color__info};
+   --color__info--light: #{$color__info--light};
+   --color__info--dark: #{$color__info--dark};
+ }

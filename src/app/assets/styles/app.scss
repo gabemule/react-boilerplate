@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#teste {
+  color: blue;
+}
+
+.app-navbar {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  background: var(--color__brand);
+
+  .app-menu {
+    a {
+      display: inline-block;
+      color: var(--color__neutral--50);
+      margin-right: 10px;
+      margin: 10px;
+      box-shadow: 10px 10px 10px;
+    }
+  }
+
+  .app-actions {
+    display: flex;
+    align-items: center;
+
+    button,
+    select {
+      margin-right: 10px;
+    }
+  }
+}

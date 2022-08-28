@@ -1,0 +1,7 @@
+.ds-caption {
+  $self: &;
+
+  display: inline;
+  font-family: var(--font-family__base);
+  font-size: $font__size--nano;
+}

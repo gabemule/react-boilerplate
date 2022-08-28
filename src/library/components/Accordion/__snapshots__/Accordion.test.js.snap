@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion Component Matches Snapshot 1`] = `
+LoadedCheerio {
+  "0": <ul
+    class="ds-accordion"
+  >
+    <li
+      class="ds-accordion-item ds-accordion-item--active"
+      data-testid="accordionItem"
+    >
+      <button
+        class="ds-accordion-item__button"
+      >
+        <p
+          class="ds-paragraph ds-paragraph--small  with-custom-props"
+          data-testid="text-text"
+        >
+          Accordion 1
+        </p>
+        <div
+          class="ds-icon ds-icon--keyboard-arrow-down ds-icon__color--neutral-90"
+          data-testid="text-icon"
+        />
+      </button>
+      <div
+        class="ds-accordion-item__content"
+      >
+        lorem ipsum dolor sit amet
+      </div>
+    </li>
+    <li
+      class="ds-accordion-item"
+      data-testid="accordionItem"
+    >
+      <button
+        class="ds-accordion-item__button"
+      >
+        <p
+          class="ds-paragraph ds-paragraph--small  with-custom-props"
+          data-testid="text-text"
+        >
+          Accordion 2
+        </p>
+        <div
+          class="ds-icon ds-icon--keyboard-arrow-down ds-icon__color--neutral-90"
+          data-testid="text-icon"
+        />
+      </button>
+    </li>
+  </ul>,
+  "_root": LoadedCheerio {
+    "0": Document {
+      "children": Array [
+        <html>
+          <head />
+          <body />
+        </html>,
+      ],
+      "endIndex": null,
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "startIndex": null,
+      "type": "root",
+      "x-mode": "quirks",
+    },
+    "_root": [Circular],
+    "length": 1,
+    "options": Object {
+      "decodeEntities": true,
+      "xml": false,
+    },
+  },
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "xml": false,
+  },
+}
+`;

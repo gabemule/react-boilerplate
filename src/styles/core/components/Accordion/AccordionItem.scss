@@ -1,0 +1,72 @@
+.ds-accordion-item {
+  border-bottom: 1px solid var(--accordion-border-color);
+  border-radius: $spacing--nano;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--accordion-background-color);
+    border: 0;
+    padding: $spacing--xxxs;
+    cursor: pointer;
+    user-select: none;
+    border-radius: $spacing--nano;
+    color: var(--accordion-title-color);
+
+    &:focus {
+      outline-color: var(--button-background-color__primary--hover);
+    }
+
+    &:hover {
+      background-color: var(--accordion-background-color--hover);
+    }
+
+    .ds-icon__color--neutral-40 {
+      background-color: var(--accordion-title-color--disabled);
+    }
+
+    .ds-icon__color--neutral-90 {
+      background-color: var(--accordion-title-color);
+    }
+  }
+
+  &--disabled .ds-accordion-item__button {
+    cursor: not-allowed;
+    pointer-events: none;
+    color: var(--accordion-title-color--disabled);
+  }
+
+  &__title {
+    width: 100%;
+    margin: 0;
+  }
+
+  &--active {
+    background-color: var(--accordion-background-color--hover);
+    outline: none;
+
+    & .ds-accordion-item__button {
+      background-color: var(--accordion-background-color--hover);
+      outline: none;
+    }
+
+    & .ds-accordion-item__button .ds-icon {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__content {
+    padding: 0 $spacing--sm $spacing--xs $spacing--xxxs;
+    color: var(--accordion-content-color);
+  }
+
+  .ds-paragraph {
+    margin: 0
+  }
+
+  .ds-icon {
+    transition: transform 0.2s ease-in-out;
+  }
+}

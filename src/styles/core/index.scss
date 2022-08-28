@@ -1,0 +1,10 @@
+// global core styles
+
+// core tokens - bellow imports depends on these first
+@import "tokens";
+
+// core mixins - depends on tokens
+@import "mixins";
+
+// core functions - depends on tokens
+@import "functions";
