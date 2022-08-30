@@ -87,7 +87,6 @@
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.3.11",
     "postcss-loader": "^6.2.0",
-    "postcss-svg": "^3.0.0",
     "prettier": "2.5.1",
     "rimraf": "^3.0.2",
     "sass": "^1.44.0",

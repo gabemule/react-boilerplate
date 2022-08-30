@@ -1,6 +1,5 @@
 const path = require("path");
 const autoprefixer = require("autoprefixer");
-const postcssSVG = require('postcss-svg');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
@@ -69,9 +68,7 @@ module.exports = {
             options: {
               postcssOptions: {
                 plugins: [
-                  autoprefixer,
-                  postcssSVG
-                ],
+                  autoprefixer],
               },
             }
           },
